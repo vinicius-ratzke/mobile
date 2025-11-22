@@ -32,9 +32,9 @@ class TransactionAdapter(
         binding.tvAmount.text = item.formattedAmount
 
         val colorRes = if (item.type == TransactionType.CREDITO) {
-            android.R.color.holo_green_dark
+            R.color.transaction_credit
         } else {
-            android.R.color.holo_red_dark
+            R.color.transaction_debit
         }
         binding.tvAmount.setTextColor(ContextCompat.getColor(context, colorRes))
 
